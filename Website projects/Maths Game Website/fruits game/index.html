@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title> Fruits Game</title>
+  <meta charset="utf8">
+  <meta name = "viewport" content="width=device-width,intial-scale=1,user-scaleble=yes">
+  <link rel="stylesheet" href="fruit.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  </head>
+  <body>
+<div id="container">
+<div id="score">
+  Score: <span id="scorevalue">0</span><!-- place between span cause value will later be manipulated by js-->
+  </div>
+  <div id="correct">
+    correct
+    </div>
+    <div id="wrong">
+      try again
+      </div>
+      <div id="fruitContainer">
+        <img id="fruit1" class="fruit">
+        </div>
+        <div id="instruction">
+Catch Fruits
+          </div>
+
+            <div id="startreset">
+              Start Game
+              </div>
+              <div id="trialsLeft">
+
+                </div>
+                <div id="gameOver">
+
+                  </div>
+                  <audio id="slicesound">
+                  <source src="audio/slicefruit1.mp3">  </source>
+                  <source src="audio/slicefruit1.ogg"> </source>
+                  </audio>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="jquery.js"></script>
+    </body>
+    </html>
