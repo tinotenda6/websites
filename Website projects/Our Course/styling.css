@@ -1,0 +1,131 @@
+/*MAke the body positioned relative to allow scroll spy to work
+-Add a font family to the whole page
+*/
+/*Video:
+-set the video as background make it fixed
+make sure it appers behind all elements
+make sure it spread across the whole webpage*/
+body{
+  font-family: 'Vollkorn', sans-serif;
+  position: relative;
+}
+
+#bgvideo{
+  position:fixed;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -100;
+}
+@media(max-width:768px){
+  body{
+      background: url(images/nature.png) center center fixed;
+      background-size: cover;
+  }
+  #bgvideo{
+    display:none;
+  }
+}
+#home{
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 15%;
+}
+#home h1{
+  margin-bottom: 30px;
+}
+
+#home h2{
+  margin-bottom: 50px;
+}
+
+#home .btn{
+  background-color: rgb(29,167,179);
+  color:#fff;
+  font-size:20px;
+  padding: 8px 20px;
+}
+#home .btn:hover{
+  background-color: rgba(29,167,179, 0.5);
+}
+
+#promise{
+  padding-top: 100px;
+  }
+
+#myCarousel{
+  width:60%;
+  margin: 0 auto;
+  text-align:center;
+}
+
+.carousel-inner .item img{
+  height: 300px;
+  margin: 0 auto;
+}
+
+.carousel-caption{
+  position: relative;
+  left:auto;
+  right:auto;
+  height: 200px;
+}
+
+@media(max-device-width:768px){
+  .carousel-inner .item img{
+    height:300px;
+  }
+  .carousel-inner h2{
+    font-size: 23px;
+  }
+}
+
+@media(max-width:400px){
+  .carousel-inner .item img{
+    height:200px;
+  }
+  .carousel-inner h2{
+    font-size: 17px;
+  }
+  .navbar-brand{
+    font-size: 12px;
+      }
+    }
+.footer{
+  background-color: rgba(29,167,179,0,1);
+  color: #fff;
+  margin-top: 150px;
+  font-size: 15px;
+}
+/*vide,o does not work in small devices so use media queries and substitue video with picture*/
+.navbar-custom{
+  font-size:18px;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus{
+  color: white;
+}
+nav li: active{
+  color:#ff2313 important!;
+  background: bg-primary;
+}
+.container{
+  max-width: 1000px;
+}
+
+#about{
+  color:#fff;
+  text-align: center;
+  padding-top: 100px;
+}
+#about h2{
+  font-weight: bold;
+}
+#about p{
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.aboutImage{
+  height: 120px;
+}
